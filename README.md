@@ -1,6 +1,6 @@
-# Regina Cupa — Portfólio Editorial & Currículo Digital
+# Regina Cupa — Portfolio Editorial & Currículo Digital
 
-Portfólio profissional e currículo interativo de **Regina Cupa**, desenvolvido na interseção entre design visual refinado e engenharia de software moderna. A interface é concebida a partir de uma direção de arte editorial contemporânea (inspiração em publicações premium e ritmo visual sofisticado), combinando alto contraste, tipografia elegante e elementos gráficos expressivos.
+Portfolio profissional e currículo interativo de **Regina Cupa**, desenvolvido na interseção entre design visual refinado e engenharia de software moderna. A interface é concebida a partir de uma direção de arte editorial contemporânea (inspiração em publicações premium e ritmo visual sofisticado), combinando alto contraste, tipografia elegante e elementos gráficos expressivos.
 
 ---
 
@@ -36,7 +36,7 @@ O projeto foi construído utilizando **React** e **Vite**, estruturado em compon
 ## 📁 Estrutura do Projeto
 
 ```text
-Portifolio_2.0/
+Portfolio_2.0/
 ├── .github/
 │   └── workflows/
 │       └── deploy.yml          # Pipeline CI/CD para GitHub Pages
@@ -79,8 +79,8 @@ Portifolio_2.0/
 
 1. **Clone o repositório:**
    ```bash
-   git clone https://github.com/reginacupa/Portifolio_2.0.git
-   cd Portifolio_2.0
+   git clone https://github.com/reginacupa/Portfolio_2.0.git
+   cd Portfolio_2.0
    ```
 
 2. **Instale as dependências (instalação limpa e reproduzível):**
@@ -92,7 +92,7 @@ Portifolio_2.0/
    ```bash
    npm run dev
    ```
-   Acesse o endereço exibido no terminal (geralmente `http://localhost:5173/Portifolio_2.0/`).
+   Acesse o endereço exibido no terminal (geralmente `http://localhost:5173/Portfolio_2.0/`).
 
 4. **Verificação de qualidade de código (Lint):**
    ```bash
@@ -125,7 +125,7 @@ O projeto está configurado para deploy contínuo:
 ### GitHub Pages (Configurado)
 O repositório inclui um workflow em `.github/workflows/deploy.yml` que compila o projeto com `npm ci` e `npm run build`, publicando automaticamente a pasta `dist` no GitHub Pages a cada push na branch `main`.
 
-* **Base Path:** O `vite.config.js` está configurado com `base: '/Portifolio_2.0/'`, garantindo que assets, scripts e fontes sejam resolvidos corretamente no GitHub Pages.
+* **Base Path:** O `vite.config.js` está configurado com `base: '/Portfolio_2.0/'`, garantindo que assets, scripts e fontes sejam resolvidos corretamente no GitHub Pages.
 
 ### Outras Plataformas (Vercel / Netlify)
 Caso opte por hospedar em plataformas com domínio raiz próprio:
