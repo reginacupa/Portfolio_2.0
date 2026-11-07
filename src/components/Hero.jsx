@@ -7,7 +7,7 @@ const Hero = () => {
     <section id="hero" className="theme-dark">
       <div className="grid-asymmetric-hero">
         <div className="hero-text-side">
-          <span className="section-label">Portfólio & Currículo</span>
+          <span className="section-label">Portfolio & Currículo</span>
           <h1 className="editorial-headline">
             Front-end Developer <br />
             <em>& UI Designer</em>
