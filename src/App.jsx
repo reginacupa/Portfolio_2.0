@@ -111,6 +111,23 @@ function App() {
           document.body.style.backgroundColor = `rgb(${midColor[0]}, ${midColor[1]}, ${midColor[2]})`;
         }
       }
+
+      // Ajusta dinamicamente as cores dos textos da seção SOBRE conforme a transição de fundo
+      const sobreSection = document.getElementById('sobre');
+      if (sobreSection) {
+        const textElements = sobreSection.querySelectorAll(
+          '.about-editorial-headline, .lead-paragraph, .body-paragraph'
+        );
+        textElements.forEach(el => {
+          const rect = el.getBoundingClientRect();
+          const elCenterY = Math.max(0, Math.min(vh, rect.top + rect.height * 0.5));
+          const bg = getColorAtViewportY(elCenterY, sectionData, vh);
+          // Luminância perceptual para garantir contraste adequado em todas as etapas
+          const luminance = (0.299 * bg[0] + 0.587 * bg[1] + 0.114 * bg[2]) / 255;
+          const isDark = luminance < 0.5;
+          el.classList.toggle('text-theme-dark', isDark);
+        });
+      }
     };
 
     const onScroll = () => {

@@ -393,6 +393,41 @@ mask-image: linear-gradient(
   max-width: 680px;
 }
 
+/* Dynamic Scroll-Linked Text Contrast for About Section */
+#sobre .about-editorial-headline,
+#sobre .lead-paragraph,
+#sobre .body-paragraph,
+#sobre .body-paragraph strong {
+  transition: color 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+#sobre .about-editorial-headline,
+#sobre .lead-paragraph {
+  color: var(--color-text-light-theme);
+}
+
+#sobre .body-paragraph {
+  color: var(--color-text-muted-light);
+}
+
+#sobre .body-paragraph strong {
+  color: #48484A;
+}
+
+/* High contrast when the background transitions to dark during scroll */
+#sobre .about-editorial-headline.text-theme-dark,
+#sobre .lead-paragraph.text-theme-dark {
+  color: var(--color-text-dark-theme);
+}
+
+#sobre .body-paragraph.text-theme-dark {
+  color: var(--color-text-muted-dark);
+}
+
+#sobre .body-paragraph.text-theme-dark strong {
+  color: var(--color-text-dark-theme);
+}
+
 @media (max-width: 992px) {
   .grid-about {
     grid-template-columns: 1fr;
